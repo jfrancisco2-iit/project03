@@ -1,0 +1,127 @@
+#main-navbar{
+  background-color: green;
+  position: relative;
+}
+
+#main-navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: inline-block;
+}
+
+#main-navbar ul li {
+  float: left;
+}
+
+#main-navbar ul li a{
+  display: block;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+#main-navbar ul li a:hover{
+  background-color: #54436B;
+}
+
+#navbar-container{
+  position: relative;
+  text-align: center;
+  width: 100%
+}
+
+#onpage{
+  text-decoration: underline overline;
+}
+
+p{
+  font-size: 25px;
+  padding: 0px 0px;
+  margin-left: 10 px;
+}
+
+ul{
+  margin: 20px 0px 20px 50px;
+}
+
+li {
+  font-family: 'Zilla Slab', serif;
+  list-style-position: inside;
+  text-align: left;
+  font-size: 25px;
+}
+
+
+h1.specialfont{
+  font-family: 'introrustg-base2line', serif;
+  font-size: 75px;
+  text-align: center;
+  padding: 20px 100px;
+}
+
+h2.specialfont{
+  font-family: 'introrustg-base2line', serif;
+  font-size: 48px;
+  text-align: left;
+  padding: 5px 100px;
+  margin: 5px 0px;
+}
+
+h3.specialfont{
+  font-family: 'introrustg-base2line', serif;
+  font-size: 40px;
+  text-align: left;
+  padding: 20px 0px;
+}
+
+img{
+  display: block;
+  border: 20px solid #019267;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 20%;
+}
+
+#resumecenter {
+  background-color: #00C897;
+  font-size: 25px;
+  text-align: center;
+  padding: 20px 20px;
+}
+
+body {
+  font-family: 'Zilla Slab', serif;
+  font-size: 25px;
+  background-color: #FDFFA9;
+}
+
+footer{
+  padding: 20px 150px 20px 150px;
+  background-color: green;
+}
+
+section{
+  padding: 20px 300px;
+}
+
+.p1{
+  padding: 20px 300px;
+}
+
+#img-caption{
+  padding: 20px 300px;
+  margin: 15px 0px;
+  background-color: #98ff98;
+  text-align: center;
+}
+
+.rs01{
+  padding: 20px 300px;
+}
+
+.embed-video-container{
+  background-color: #00F5FF;
+}
