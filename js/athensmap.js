@@ -1,7 +1,7 @@
 function init(){
-  //alert ('it works');
+
   var el = document.getElementById('canvas');
-  var myLocation = new google.maps.LatLng(39.327392,-82.101204)
+  var athensLocation = new google.maps.LatLng(39.327392,-82.101204)
   var mapOptions = {
     center:myLocation,
 	zoom:12,
@@ -14,7 +14,7 @@ function init(){
   var myMap = new google.maps.Map(el, mapOptions);
 
   var marker = new google.maps.Marker({
-    position: myLocation,
+    position: athensLocation,
 	map: myMap,
 	animation: google.maps.Animation.BOUNCE,
 	icon: 'paw.jpg;
