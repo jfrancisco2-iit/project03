@@ -1,29 +1,28 @@
 function init(){
 
-  var el = document.getElementById('canvas');
-  var athensLocation = new google.maps.LatLng(39.327392,-82.101204)
-  var mapOptions = {
-    center:myLocation,
-	zoom:12,
-	mapTypeId: google.maps.MapTypeId.SATELLITE,
-	mapTypeControlOptions: {
-	  postion: google.maps.ControlPosition.BOTTOM_CENTER
-	}
-  };
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 10,
+    center: {lat: 39.327392, lng: -82.101204},
+  });
 
-  var myMap = new google.maps.Map(el, mapOptions);
+  var alumniGate = new google.maps.Circle({
+    center:{lat: 39.327392, lng: -82.101204},
+    radius:100,
+    strokeColor:"#354A21",
+    fillColor:"#728C69",
+    map: map
+  });  
 
   var marker = new google.maps.Marker({
-    position: athensLocation,
-	map: myMap,
-	animation: google.maps.Animation.BOUNCE,
-	icon: 'paw.jpg;
-  }
+    position: {lat: 39.327392, lng: -82.101204},
+    map: map,
+  });
 
-  google.maps.event.addListener(marker, 'mouseover', function() {
-    	infowindow.open(myMap, marker);
-  	});
-	
+  var contentString = "<p>This is where the Ohio University Alumni Gate is.</p>";
+  
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString,
+  });
+  infowindow.open(map, marker);
 }
-	
-google.maps.event.addDomListener(window, 'load', init);
+window.initMap = initMap;
